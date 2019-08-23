@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block breadcrumb %}{{ block.super }} > Dashboard > Confirm Delete {% endblock %}
+
+{% block content %}
+
+<div class="form">
+    <h3>Are You Sure You Want to Delete This Post : <b>{{ object.title }}</b></h3>
+    <form method="POST" novalidate>
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <input type="submit" value="YES">
+    </form>
+</div>    
+{% endblock %}

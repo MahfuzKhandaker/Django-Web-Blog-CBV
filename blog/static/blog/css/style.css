@@ -1,0 +1,72 @@
+/* Css Vaiables */
+
+:root {
+    --primary: rgb(190, 15, 15);
+    --primary-light: rgb(212, 47, 47);
+    --secondary: #000;
+    --light-dark: #3d3d3d;
+    --lighter-dark: #5e5d5d;
+    }
+
+/* Comments */
+
+.comment {
+    display: grid;
+    grid-template-columns: 60px auto;
+    margin: 30px 0;
+    border-right: 3px solid #dfdfdf;
+}
+
+.comment img {
+    width: 100%;
+    padding-right: 10px;
+}
+
+.comment .info p:first-child {
+    font-weight: 600;
+}
+
+.comment .info p:last-child {
+    font-size: 14px;
+}
+
+.comment .info span {
+    font-size: 12px;
+    color: var(--lighter-dark);
+}
+
+
+/* Form */
+
+.login-form {
+    justify-self: center;
+}
+
+.login-form input[type="submit"] {
+    width: 100% !important;
+}
+
+.form input, textarea, select {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 2px;
+    border: none;
+    margin: 5px 0 20px 0;
+    font-size: 16px;
+    background: #f3efef;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.form textarea {
+    height: 150px;
+}
+
+.form input[type="submit"] {
+    background: var(--primary);
+    color: white;
+    width: auto;
+}
+
+.form input[type="submit"]:hover {
+    background: var(--primary-light);
+}
